@@ -12,15 +12,6 @@ const projects = (await getCollection('work')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
 ---
-<style>
-a:hover, button:hover {
-    background-color: white;
-    color: black;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 0 20px 10px white;
-    transform: scale(1.1); /* Augmentation de la taille de l'élément */
-}
-</style>
 <BaseLayout
 	title="Mes Projets | Alexandre Bensier"
 	description="Découvrez les projets les plus récents de Alexandre Besnier"
