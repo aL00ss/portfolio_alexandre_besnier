@@ -1,6 +1,7 @@
-importt {defineConfig} from 'astr/ config'; Calculating...
-
+import { defineConfig } from 'astro/config';
+import netlify from '@astrojs/netlify/functions';
 
 export default defineConfig({
-	site: 'https://astro-portfolo-alexandre-besnier.netlify.app'
+    output: 'server',
+    adapter: netlify(),
 });
