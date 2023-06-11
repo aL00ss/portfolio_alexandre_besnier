@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="A propos | Alexandre Besnier" description="A propos de Alexandre Besnier">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="A propos"
+				tagline="Ci-dessous un bilan sur mon année"
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/travail.jpg"
+					alt="Python"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Bilan</h2>
+				<div class="content">
+					<p>
+						Ma première année de BUT SD m'a permis, d'une part, de renforcer mon engagement dans les travaux d'équipe et ma méthode d'apprentissage, et d'autre part, 
+						de progressivement apporter mes compétences et mes connaissances sur des sujets inexplorés. 
+						Malgré mes appréhensions initiales, j'ai été agréablement surpris par la partie codage qui m'a rapidement captivé. 
+						Grâce à ma compréhension des attentes de la formation, j'ai pu m'investir pleinement.
+					</p>   
+
+					<p>
+						Au cours de cette période, j'ai développé et acquis diverses compétences techniques dans des domaines variés tels qu'Excel, VBA, Python, SAS, R Studio, SQL et HTML. 
+						J'ai approfondi ma maîtrise d'Excel en utilisant des formules avancées, des tableaux dynamiques et des graphiques impactants. 
+						De plus, j'ai exploré la programmation avec VBA pour automatiser des tâches dans Excel. 
+						J'ai également plongé dans le langage Python pour l'analyse de données, utilisant des bibliothèques telles que pandas, matplotlib et seaborn. 
+						En parallèle, j'ai découvert l'environnement SAS pour la manipulation de données et la modélisation statistique. 
+						J'ai également exploré le langage R et R Studio pour des analyses statistiques approfondies et la construction de modèles prédictifs. 
+						Par ailleurs, j'ai acquis des compétences en SQL pour interagir avec des bases de données relationnelles.
+						Enfin, j'ai obtenu une compréhension de base d'HTML pour créer des pages web et j'ai utilisé CSS pour les styliser.
+					</p>
+				</div>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
