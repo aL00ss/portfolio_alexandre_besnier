@@ -13,18 +13,32 @@ tags:
 
 
 
-Dans le cadre de ce projet réalisée en groupe de 5, j'ai acquis les compétences suivantes en utilisant principalement Python :
+Dans le cadre de ce projet réalisé en groupe de 5, les membres de l’équipe ont été organisés de manière autonome. Chaque membre s’est vu attribuer une tâche en fonction de ses compétences prédominantes. Nous avons adopté une méthode agile avec un Scrum Master que nous avons désigné, des sprints et des user stories pour structurer et mener à bien le projet.
 
-Analyse de données : J'ai appris à nettoyer et préparer des données à partir du fichier Excel "recrutement.xlsx", en vérifiant les valeurs manquantes, les erreurs et les doublons.
+J’ai acquis les compétences suivantes en utilisant principalement Python :
 
-Programmation en Python : J'ai développé un outil dynamique pour le processus de recrutement, en utilisant des bibliothèques Python telles que pandas pour la manipulation des données et matplotlib/seaborn pour la visualisation.
+Analyse de données :
 
-Reporting et visualisation des données : J'ai créé des graphiques et des tableaux de bord pour profiler les candidats et mettre en évidence les facteurs influençant les décisions favorables ou défavorables. J'ai utilisé des indicateurs pertinents pour synthétiser les données et faciliter la prise de décision.
+Nettoyage et préparation des données à partir du fichier Excel “recrutement.xlsx”.
+Vérification des valeurs manquantes, des erreurs et des doublons pour garantir la qualité des données.
+Programmation en Python :
 
-Automatisation des tâches : J'ai automatisé la création d'un fichier de synthèse des candidats similaire à "synthèse.xlsx", en ajoutant les colonnes nécessaires. J'ai également développé une interface graphique intuitive pour accéder aux fonctionnalités de l'outil.
+Développement d’un outil dynamique pour le processus de recrutement.
+Utilisation de bibliothèques comme pandas pour la manipulation des données et matplotlib/seaborn pour la visualisation.
+Reporting et visualisation des données :
 
-Documentation et recommandations : J'ai rédigé deux manuels d'accompagnement décrivant le fonctionnement technique de l'outil et fournissant des instructions pour son utilisation. J'ai également proposé des recommandations pour améliorer le questionnaire "Google Forms" et le processus de recrutement.
+Création de graphiques et tableaux de bord permettant de profiler les candidats.
+Mise en évidence des facteurs influençant les décisions favorables ou défavorables grâce à des indicateurs pertinents.
+Automatisation des tâches :
 
-En résumé, grâce à cette SAÉ en groupe de 5 et en utilisant principalement Python, j'ai développé des compétences en analyse de données, en programmation, en reporting et visualisation, en automatisation des tâches, ainsi qu'en documentation.
+Automatisation de la création d’un fichier de synthèse des candidats similaire à “synthèse.xlsx” avec ajout des colonnes nécessaires.
+Développement d’une interface graphique intuitive pour accéder facilement aux fonctionnalités de l’outil.
+Documentation et recommandations :
+
+Rédaction de deux manuels d’accompagnement détaillant le fonctionnement technique de l’outil et des instructions pour son utilisation.
+Proposition de recommandations pour améliorer le questionnaire “Google Forms” et optimiser le processus de recrutement.
+
+En résumé :
+Grâce à ce projet universitaire menée en groupe de 5 et en utilisant principalement Python, j’ai développé des compétences solides en analyse de données, programmation, reporting et visualisation, automatisation des tâches, ainsi qu’en documentation et en travail en équipe.
 
 télécharger les documents princpaux liés à ce projet: <a href="/assets/SAE finale FINIE.zip" download>télécharger</a>
