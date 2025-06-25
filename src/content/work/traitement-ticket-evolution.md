@@ -1,7 +1,10 @@
 ---
 title: "Traitement d’un ticket et évolution du module de Planning Poker"
+publishDate: 2025-06-30
+img: /assets/sae_analyse_stat_sphinx.jpg
+img_alt: formulaire de création d'une session de poker planning dans Odoo
 description: "J'ai créé un module odoo répondnat aux besoins d'Innlog."
-publishDate: "2025-06-30"
+
 tags:
   - Stage
   - Réponse aux incidents et aux demandes d'assistance et d'évolution

@@ -1,7 +1,10 @@
 ---
 title: "Auto-formation et montée en compétences sur Odoo"
+publishDate: 2025-06-30
+img: /assets/sae_analyse_stat_sphinx.jpg
+img_alt: example de tableau Kanban utilisé
 description: "Mon processus d’auto-formation pour devenir opérationnel sur Odoo"
-publishDate: "2025-06-30"
+
 tags:
   - Stage
   - Auto-formation Odoo
