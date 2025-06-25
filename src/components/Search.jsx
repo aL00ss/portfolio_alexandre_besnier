@@ -16,8 +16,9 @@ export default function Search({ items }) {
 
   useEffect(() => {
     if (query.trim().length > 0) {
-      constFuseResults = fuse.search(query).map(r => r.item);
-      setResults(constFuseResults);
+      // ✂️ Correction : espace manquant, et nommage plus clair
+      const fuseResults = fuse.search(query).map(r => r.item);
+      setResults(fuseResults);
     } else {
       setResults([]);
     }
