@@ -1,7 +1,10 @@
 ---
 title: "Développement du module en mode projet agile"
+publishDate: 2025-06-30
+img: /assets/sae_analyse_stat_sphinx.jpg
+img_alt: example de tableau Kanban utilisé
 description: "Sprint, Kanban, mêlées quotidiennes et rétrospectives"
-publishDate: "2025-06-30"
+
 tags:
   - Stage
   - Travail en mode projet
