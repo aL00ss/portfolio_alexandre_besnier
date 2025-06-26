@@ -10,8 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^2.3.0",
-    "astro": "^2.6.3",
-    "fuse.js": "^7.1.0"
+    "@astrojs/netlify": "^6.4.0",
+    "@astrojs/preact": "^4.1.0",
+    "astro": "^5.10.1",
+    "fuse.js": "^7.1.0",
+    "preact": "^10.26.9"
+  },
+  "devDependencies": {
+    "@astrojs/preact": "^4.1.0"
   }
 }

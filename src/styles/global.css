@@ -226,6 +226,41 @@ h5 {
 .gap-48 {
 	gap: 12rem;
 }
+.filter-bar {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 2rem 0;
+  }
+  #tag-filter {
+	min-width: 200px;
+	max-width: 300px;
+	padding: 0.4rem 0.6rem;
+	font-size: 1rem;
+	border: 1px solid var(--gray-500);
+	border-radius: 0.25rem;
+	background: var(--bg-paper);
+	color: var(--text);
+  }
+  #tag-filter option {
+	padding: 0.25rem;
+  }
+  .projects-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 1.5rem;
+  }
+  .project-card {
+	padding: 1rem;
+	border: 1px solid var(--gray-300);
+	border-radius: 0.5rem;
+	background: var(--bg-surface);
+	transition: box-shadow 0.2s;
+  }
+  .project-card:hover {
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
 
 @media (min-width: 50em) {
 	.lg\:gap-2 {
@@ -253,3 +288,7 @@ h5 {
 		gap: 12rem;
 	}
 }
+
+
+
+
