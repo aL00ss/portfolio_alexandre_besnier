@@ -1,7 +1,7 @@
 ---
 title: "Mise en place de ma veille informatique avec Feedly"
 publishDate: 2025-10-01
-img: /assets/feedly.png
+img: /assets/Feedly.png
 img_alt: Tableau de bord Feedly présentant différents flux rss
 description: "Comment j’ai organisé ma veille technologique"
 tags:
