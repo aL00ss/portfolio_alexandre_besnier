@@ -1,0 +1,545 @@
+﻿SIO2 Bloc 1
+
+Lyc�e Savary de Maul�on - BTS SIO - Bloc 1 SIO2 - Pac�me MASSOL
+
+2025-2026
+Attribution - Partage dans les M�mes Conditions : http://creativecommons.org/licenses/by-
+sa/4.0/fr/
+Table des mati�res
+
+1. Preuves de mise en oeuvre des comp�tences  3
+
+2. TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+                                                                                                                          4
+
+      2.1. Comp�tences du bloc 1................................................................................. 4
+
+      2.2. Objectifs ......................................................................................................... 4
+
+      2.3. TP1 : cr�ation du domaine AD ...................................................................... 4
+
+               2.3.1. Pr�paration de la VM Windows........................................................................................... 4
+               2.3.2. Cr�ation du domaine ........................................................................................................... 6
+
+      2.4. TP2 : Gestion des utilisateurs du domaine ................................................ 11
+
+               2.4.1. Cr�ation des unit�s d'organisation (UO) .......................................................................... 11
+               2.4.2. Cr�ation des groupes ........................................................................................................ 14
+               2.4.3. Cr�ation des utilisateurs ................................................................................................... 15
+               2.4.4. Gestion des permissions................................................................................................... 17
+               2.4.5. Exercice : Cr�ation d'un groupe local et d'un dossier partag�........................................ 19
+
+      2.5. TP3 : Int�gration d'un PC � AD.................................................................... 19
+
+               2.5.1. Pr�paration client Windows .............................................................................................. 19
+               2.5.2. Principales �tapes de configuration................................................................................. 19
+               2.5.3. Validation du TP sur les permissions............................................................................... 27
+               2.5.4. Rappel : Portfolio ............................................................................................................... 27
+
+2  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+1. Preuves de mise en oeuvre des
+     comp�tences
+
+Portfolio
+
+Rep�rer la/les comp�tences du bloc 1 concern�es
+Cr�er un article dans votre portfolio avec des copies d'�cran et du texte
+
+Tableau de synth�se des comp�tences
+
+Compl�ter votre tableau de synth�se
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL            3
+2. TP : Mettre en place et v�rifier les
+     niveaux d'habilitation associ�s � un
+     service
+
+2.1. Comp�tences du bloc 1
+
+B11 G�rer le patrimoine informatique
+
+   B1.1.3  Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+Qu'est-ce qui est attendu � l'�preuve E4 ?
+
+Selon le r�f�rentiel :
+
+     Les droits mis en place correspondent aux habilitations des acteurs.
+
+2.2. Objectifs
+
+Pour pouvoir � mettre en place et v�rifier les niveaux d'habilitation associ�s � un service � sous
+Windows, il va falloir suivre les �tapes suivantes :
+TP1 : disposer d'un serveur Windows et le promouvoir � contr�leur de domaine � ce qui installera
+un annuaire AD Active Directory dans lequel nous pourrons cr�er des utilisateurs, des groupes, etc.
+
+TP2 : attribuer des droits aux utilisateurs (par exemple sur un dossier r�seau partag�)
+TP3 : disposer d'un PC et l'int�grer au domaine et se connecter sur ce PC avec diff�rents comptes
+utilisateurs et v�rifier que les autorisations et/ou les interdictions sont bien configur�es.
+
+2.3. TP1 : cr�ation du domaine AD
+
+2.3.1. Pr�paration de la VM Windows
+a) Cr�ation de la VM
+
+Dans VCenter, ajoutez une nouvelle VM / d�ployer un mod�le / Windows server 2022
+Respectez le nommage des VM (OS + votre nom + fin IP)
+Placez la VM dans votre VLAN
+
+4          Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+b) Configurer le nom du serveur
+
+Une fois connect�, vous �tes invit� � suivre l'�tape 1 � Configurer ce serveur local � (ne pas faire les
+autres pour le moment) pour v�rifier ou r�aliser les configurations n�cessaires :
+
+                                                  Attention
+
+Lors de l'installation, Windows a g�n�r� un nom al�atoire (1) mais nous allons d�finir un nom
+convenable.
+
+En pr�vision des prochains TP, il est important de mettre un nom � compatible � avec
+Internet puisqu'il s'agit en r�alit� d'un nom NETBIOS dont les r�gles sont diff�rentes. Vous
+mettez SRV-AD- suivi de votre identifiant Windows (exemple : SRV-AD-PMASSOL)
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL                                5
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+c) Configurer l'adressage IP
+
+Mettre une adresse coh�rente avec votre VLAN (2) :
+
+                                                     Attention
+
+   Dans un CMD, on valide la configuration (ping www.google.fr doit fonctionner)
+
+d) D�sactiver les mises � jour Windows Update
+
+Suivre ce tuto.
+
+                                                  Remarque
+
+   Bien s�r, on fait cela uniquement parce que l'on est en TP et que l'installation des mises � jour
+   Windows est trop longue.
+
+e) Travail en bureau � distance
+
+A partir de maintenant, on travaille en bureau � distance (donc plus dans la web console). Depuis
+votre PC physique, dans le menu choisir � Connexion bureau � distance � puis tapez l'IP de votre
+VM.
+
+2.3.2. Cr�ation du domaine
+
+Introduction
+
+Dans le cadre du red�ploiement de son nouveau r�seau, un administrateur syst�me souhaite en
+am�liorer le fonctionnement. En effet, les reproches actuels sont :
+
+   pour faciliter le travail des utilisateurs, tout le monde est � administrateur � de son poste de
+   travail. Donc, les configurations ne sont pas homog�nes, des logiciels sont d�sinstall�s,
+   d'autres sont ajout�s, etc.
+
+   partages r�seaux (disque ou imprimantes) anarchiques ;
+
+   difficult� de d�finir des r�gles communes (longueur des mots de passe, complexit�, horaires
+   de connexion, mises � jour, pare-feu, antivirus, etc.) ;
+
+6             Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+         lorsqu'un utilisateur change de poste, il ne retrouve pas son profil (messagerie, ic�nes,
+         raccourcis, signets, etc.) ;
+         impossibilit� de d�ployer automatiquement des logiciels ou des mises � jour.
+Il est donc d�cid� d'abandonner le mode r�seau � groupe de travail � pour passer au mode
+� domaine Active Directory �avec un syst�me Windows Server.
+
+a) Exercice : Ajouter le r�le � services de Domaine Active Directory �
+
+1. Vous pouvez ajouter des r�les dans le "Gestionnaire de serveur".
+2. Cliquez sur "2 Ajouter des r�les et des fonctionnalit�s", vous pouvez observer les diff�rents r�les
+(>20) que peut assurer un Windows Server.
+3. Choisissez le r�le "Services AD DS". Par d�pendance, vous devrez aussi installer certaines
+fonctionnalit�s requises (notamment le centre d'administration)
+
+Question
+
+Rappeler ce qu'est � Active Directory � ? Quelle technologie Internet (protocole) cela utilise-t-il ?
+4. Passez aux � fonctionnalit�s � mais n'installez rien d'autre.
+5. Poursuivez l'assistant d'installation jusqu'� la fin
+Laissez l'installation se terminer. Attention, ce n'est pas fini (lire la suite) !
+
+b) Configuration (promotion)
+
+1. Retourner dans le � Gestionnaire de serveur �
+2. En cliquant sur � AD DS � (1) on voit que le service a �t� install� mais qu'il reste une �tape de
+configuration (2) :
+
+3. Cliquez sur � Promouvoir ce serveur... �
+
+Configuration de d�ploiement                                         Attention
+
+Nous installons notre premier serveur, il faut donc � Ajouter une nouvelle for�t �. Une for�t est
+un ensemble de domaines Windows qui se font confiance (ceci s'applique aux tr�s grandes
+entreprises).
+
+Mettre un nom de domaine � votre nom (par exemple : pmassol.local)
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL                                    7
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+   Poursuivre l'assistant avec les choix par d�faut.
+
+V�rification
+
+On touche � la fin :
+
+8  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+V�rification de la configuration
+
+L'installeur fait un certain nombre de v�rifications. 2 avertissements sont indiqu�s mais cela n'a
+pas de cons�quences dans notre cas :
+
+En cliquant sur � Installer, Windows fera le n�cessaire puis il red�marrera.
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL  9
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+c) Tour du propri�taire
+
+Apr�s le red�marrage, le domaine est cr��, il est donc imp�ratif de l'indiquer pour pouvoir se
+connecter :
+
+Nous avons maintenant un contr�leur de domaine tout beau tout propre, pr�t � accueillir
+utilisateurs et ordinateurs. Observons les nouveaux outils � notre disposition :
+
+                                        Deux nouveaux �l�ments sont apparus dans la partie � r�les � du
+                                        � gestionnaire de serveur � :
+
+                                                  AD DS
+                                                  DNS
+
+10  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+d) Service AD DS
+
+Allez dans � Outils\Utilisateurs et Ordinateurs Active Directory �. En d�ployant l'arborescence, dans
+� Domain Controllers � nous retrouvons notre serveur :
+
+Dans � Users �, nous retrouvons notre administrateur :
+
+e) Exercice : Service DNS
+
+Le service DNS a aussi �t� install�. Nous l'utiliserons plus tard.
+
+Question
+
+Quel est le r�le d'un serveur DNS ?
+
+2.4. TP2 : Gestion des utilisateurs du domaine
+
+Introduction
+
+Maintenant que Active Directory est install�, il faut l'alimenter. Nous allons cr�er des comptes
+utilisateurs, des groupes de s�curit� et des unit�s d'organisation.
+Ensuite, nous attribuerons des permissions.
+
+2.4.1. Cr�ation des unit�s d'organisation (UO)
+
+                                                                                                                                 Rappel
+
+Les UO sont des conteneurs Active Directory dans lesquels vous pouvez placer des
+utilisateurs, des groupes, des ordinateurs et d'autres unit�s d'organisation. Vous pouvez cr�er
+des unit�s d'organisation de fa�on � refl�ter la structure hi�rarchique, fonctionnelle ou
+commerciale de l'entreprise concern�e. Vous pourrez aussi facilement d�l�guer une partie de
+l'administration (imaginons par exemple, un seul domaine Windows mais r�parti sur plusieurs
+sites g�ographiques).
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL                                                                          11
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service   Exemple
+   Examinons cet exemple issu du domaine scolaire :
+
+    C'est un extrait de l'organisation d'un lyc�e :
+
+             les admins qui supervisent sont � part
+
+             deux UO principales : p�dagogie et administration
+
+             dans la p�dagogie, nous trouvons le groupe des enseignants et en
+             dessous, des UO correspondant aux niveaux.
+
+    On imagine bien qu'en dessous nous pourrions trouver la seconde 1, la
+    seconde 2, etc. Dans l'UO correspondant � la seconde 1, nous
+    trouverions le groupe des �l�ves de cette classe, le serveur et
+    l'imprimante qu'ils utilisent habituellement par exemple.
+
+    La gestion � base d'UO nous permettrait de d�l�guer l'administration de
+    chaque classe � un professeur principal par exemple.
+
+Nous allons maintenant mettre en application. En cliquant droit sur le niveau concern� de
+l'arborescence, vous avez un menu "nouveau" qui vous propose de cr�er une nouvelle UO. Le seul
+�l�ment � saisir sera son nom :
+
+12  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+Votre objectif est de cr�er la structure suivante :
+
+                                                   Attention
+
+   Vous remarquerez au passage que les UO sont prot�g�es contre la suppression accidentelle.
+   En effet, une UO est pratique pour l'organisation mais aussi dangereuse, car comme pour un
+   dossier dans le syst�me de fichiers, la suppression d'une UO entra�ne la suppression
+   irr�versible de tous les objets contenus !
+
+Lorsque ce travail est r�alis�, nous passons maintenant � la gestion des groupes d'utilisateurs.
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL                                   13
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+2.4.2. Cr�ation des groupes
+
+L'�cran de cr�ation de groupe se pr�sente ainsi :
+
+Nous allons maintenant cr�er dans chaque UO de classe un groupe global g_profs_21 dans l'UO
+seconde1 et g_profs_22 dans l'UO seconde2 :
+
+                                                     Remarque
+
+    Nous cr�erons toute � l'heure des groupes locaux pour attribuer des permissions.
+
+14  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+2.4.3. Cr�ation des utilisateurs
+
+Vous cr�ez dans l'UO Profs 4 professeurs prof1, prof2, prof3, prof4. Chacun devra saisir son propre
+mot de passe lors de l'ouverture de session. Le principe est de cr�er un utilisateur comme mod�le,
+puis de le copier pour les suivants.
+Cr�ation du mod�le :
+
+                                                                Lors de la cr�ation de l'utilisateur, en sus des
+                                                                informations nominatives le concernant, un "login" lui
+                                                                est attribu� (nom d'ouverture de session de
+                                                                l'utilisateur).
+
+La saisie d'un mot de passe, conforme � la strat�gie (complexit�) du domaine, est obligatoire mais
+il est fondamental que les utilisateurs disposent de leur propre mot de passe, inconnu de
+l'administrateur lui-m�me qui ne peut pas le d�couvrir (il est chiffr� en non r�versible). On laisse
+donc coch� "l'utilisateur doit changer de mot de passe..." :
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL  15
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+Ensuite, pour les suivants :
+
+Maintenant, imaginons que prof1 et prof2 interviennent en seconde1 et que prof1, prof3 et prof4
+sont en seconde2 (donc prof1 intervient dans 2 classes). Mettez ces professeurs dans le groupe
+global correspondant (clic droit / ajouter � un groupe / avanc� pour pouvoir rechercher le groupe).
+Ce qui nous donnera par exemple pour le groupe g_profs_21 :
+
+Maintenant vous faites des manipulations similaires pour les �l�ves. Cr�ez deux groupes globaux
+(g_eleves_21 et g_eleves_22) dans l'UO de la classe correspondante. Mettez dans le groupe
+g_eleves_21, les �l�ves eleve_211, eleve_212 et dans le groupe g_eleves_22, les �l�ves eleve_221
+et eleve_222. Les �l�ves seront auparavant cr��s dans une UO El�ves � la racine de l'UO P�dagogie
+(idem "Profs").
+
+Validation
+
+                                     Choisissez le mode "utilisateurs, contacts, groupes et ordinateurs en tant
+                                     que conteneurs" dans le menu "affichage" pour obtenir l'affichage ci-
+                                     contre qui vous permettra de contr�ler votre travail. Vous remarquerez au
+                                     passage que les groupes ne sont pas des conteneurs contrairement aux
+                                     UO : les membres du groupe ne sont pas pr�sent�s dans l'arborescence.
+
+16  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+2.4.4. Gestion des permissions
+
+Rappelez ce que signifie AGDLP pour la gestion des permissions sous Windows
+
+Maintenant que notre mini-structure est en place (vous imaginez le travail pour un lyc�e important),
+nous allons pouvoir nous amuser un peu. Imaginons que chaque classe dispose d'un r�pertoire
+partag� sur le serveur. Le principe est que :
+
+         les professeurs de la classe peuvent lire et �crire
+         les �l�ves peuvent seulement lire.
+Cr�ez deux groupes de domaine local dans l'UO seconde1 :
+         dl_partage_eleves_21 contenant le groupe global des �l�ves de seconde1
+         dl_partage_profs_21 contenant le groupe global des professeurs de seconde1
+
+Dans l'explorateur Windows, cr�ez � la racine d'un disque un dossier "partages". Dedans, vous
+cr�ez un dossier "seconde1" que vous partagez (clic droit / partager avec/ des personnes
+sp�cifiques...) :
+Ensuite, vous attribuez les droits d'acc�s d�finis plus haut en laissant les droits par d�faut de
+l'administrateur :
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL  17
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+Le chemin r�seau du dossier partag� (UNC) est indiqu� :
+
+Enfin, vous ajoutez ce dossier partag� dans l'UO correspondant � cette classe. Le chemin r�seau �
+indiquer, puisqu'il n'y a pas de s�lecteur, est au format UNC \\<nom machine>\<nom partage>
+(vous pouvez le copier-coller depuis les propri�t�s du partage) :
+
+18  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+Ce qui nous donne d�sormais dans la liste des objets de l'UO seconde1 :
+
+2.4.5. Exercice : Cr�ation d'un groupe local et d'un dossier partag�
+
+Continuons dans cette logique et d�montrons ici l'int�r�t de l'architecture "groupe local de
+domaine"/"groupe global" (AGLDP). L'ensemble des professeurs du lyc�e dispose d'un r�pertoire
+partag� "commun" dans lequel ils ont un droit en lecture/�criture.
+
+Question 1
+
+Cr�ez dans l'UO "Profs" un groupe de domaine local "dl_commun_profs" dans lequel vous mettez
+les deux groupes globaux de profs.
+
+Question 2
+
+Cr�ez un dossier "commun" dans le dossier "partages". Vous le partagez en mettant le groupe
+"dl_commun_profs" en lecture/�criture.
+
+2.5. TP3 : Int�gration d'un PC � AD
+
+2.5.1. Pr�paration client Windows
+
+Dans Vcenter, d�ployer une VM Windows 11 depuis un mod�le, mettre dans votre VLAN, mettre
+une configuration IP coh�rente, le serveur DNS de cette VM sera votre serveur Windows.
+
+2.5.2. Principales �tapes de configuration
+
+Introduction
+
+Pour pouvoir faire pleinement partie d'un domaine Windows et contrairement au mod�le "groupe
+de travail" qu'il suffit de d�clarer, notre machine doit �tre jointe au domaine. Ne fait pas partie d'un
+domaine qui veut, c'est une configuration r�alis�e par l'administrateur qui va permettre � la
+machine de se faire conna�tre du contr�leur de domaine et d'expliquer � la station que son r�f�rent
+en mati�re de s�curit� est le contr�leur. Nous verrons que lors de cette �tape, un compte va �tre
+cr�� pour la machine.
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL  19
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+a) Exercice : Validations indispensables
+
+Commen�ons par v�rifier les configurations IP de nos 2 machines : leur coh�rence est
+indispensable au processus d'int�gration. Relevez la configuration IP de votre serveur Windows :
+
+Question 1
+
+Quelle est l'adresse IPv4 de votre serveur ?
+
+Question 2
+
+Depuis le client Windows, v�rifiez que le ping avec le serveur fonctionne.
+
+Question 3
+
+Toujours sur le serveur :
+     1. Quelle est l'adresse IPv4 configur�e pour le serveur DNS ?
+     2. Qu'est-ce que cette adresse a de sp�cial ? Qu'est-ce que cela signifie ?
+     3. Peut-on la mettre sur les clients ? Pourquoi ?
+
+20  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+Sur le client Windows, allez dans la configuration r�seau :
+V�rifiez que l'adressage IP est statique
+En serveur DNS, mettez l'adresse IP de votre serveur Windows (192.168.x.y)
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL  21
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+Configurer �galement les �l�ments suivants (en adaptant), en cliquant sur "Avanc�..." puis sur
+l'onglet DNS :
+
+Mettre le suffixe DNS qui est le nom de votre domaine.
+
+Cocher ensuite les deux cases en dessous qui vont nous permettre d'ajouter les machines
+automatiquement au serveur DNS.
+
+22  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+Enfin, il est recommand� de d�sactiver IPv6 (inutile dans ce module et peut poser un souci dans la
+r�solution DNS) :
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL  23
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+Question 4
+
+Sur le client Windows, vous faites un ping avec le nom de votre domaine, par exemple : ping
+pmassol.local. Le ping doit fonctionner et vous devez voir appara�tre l'adresse IP de votre
+
+serveur :
+
+b) Joindre le client au domaine Windows
+
+Allez dans "panneau de configuration" / "Syst�me et s�curit�" / "Syst�me" :
+
+Cliquez sur "modifier les param�tres" puis indiquez un nom de machine "propre" et le nom de votre
+domaine :
+
+Ensuite, on vous demande un compte autoris� : entrez le compte administrateur de votre domaine.
+
+24  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+Bravo ! Votre machine sera bien int�gr�e mais avez gagn� un petit red�marrage...
+
+c) Tour du propri�taire
+
+C�t� client
+
+Vous red�marrez et sur l'�cran de connexion, vous allez constater la diff�rence en choisissant
+"Autre utilisateur" :
+
+Votre domaine doit appara�tre.
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL  25
+TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+Vous vous connecterez donc avec un compte de domaine (administrateur ou autre). Notez que
+vous pouvez toujours vous connecter en mode local (ou �ventuellement, sur un autre domaine si
+des relations existent) en utilisant la syntaxe nomdedomaine\nomdutilisateur :
+
+C�t� serveur
+
+L'int�gration du client a eu des impacts sur le serveur.
+
+26  Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL
+                                                 TP : Mettre en place et v�rifier les niveaux d'habilitation associ�s � un service
+
+C�t� serveur DNS
+Notre machine a �t� ajout�e automatiquement au serveur DNS. Son adresse et son nom pourront
+donc �tre connus des autres machines du r�seau :
+
+C�t� Active Directory
+De m�me dans l'interface de gestion du domaine, dans le conteneur � Computers �, nous
+retrouvons notre machine, signe que celle-ci a bien �t� int�gr�e dans l'Active Directory.
+
+2.5.3. Validation du TP sur les permissions
+
+Maintenant, vous vous connectez sur votre client Windows en tant que :
+
+         prof1 : il peut �crire dans le partage � seconde1 � et il peut �crire dans le partage
+         � commun �
+         eleve211 : il peut lire mais pas �crire dans le partage � seconde1 � et il ne peut rien faire
+         dans le partage � commun �
+
+2.5.4. Rappel : Portfolio
+
+Travail not�
+
+Cr�er un article dans votre portfolio pour cette activit� (uniquement la gestion des droits, pas
+l'installation de Windows etc.). La notation tiendra compte de la qualit� du texte et des copies
+d'�cran.
+
+Lyc�e Savary de Maul�on - BTS SIO - SIO2 Bloc 1 - Pac�me MASSOL                                         27
+
+
