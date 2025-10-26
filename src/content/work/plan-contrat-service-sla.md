@@ -1,6 +1,6 @@
 ---
 title: "Plan de contrat de service (SLA) — définitions et avoirs"
-description: "Proposer un plan de SLA et développer deux paragraphes: Définitions (incident, problème, SLA, centre de service, GTI, GTR, temps d’indisponibilité) et Avoirs service (définition, tableau d’avoir)."
+description: "plan de SLA"
 publishDate: 2025-10-06
 
 img: "/assets/SLA.png"

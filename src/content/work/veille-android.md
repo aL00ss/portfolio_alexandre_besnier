@@ -1,7 +1,7 @@
 ---
 title: "Ma veille sur le développement Android"
 publishDate: 2025-10-13
-img: /assets/devandroid.jpeg
+img: /assets/devandroid.jpg
 img_alt: Catégorie Android sur Feedly
 description: "Résumé de ma veille sur le développement sur Android"
 tags:

@@ -1,13 +1,13 @@
 ---
 title: "ITIL — définition et avantages"
-description: "Définir ITIL et lister les avantages de s’y conformer, conformément à l’exercice 2.3.3."
+description: "Définir ITIL et lister les avantages de s’y conformer"
 publishDate: 2025-10-06
 tags:
   - Compétence 1
   - ITIL
   - ITSM
   - Bonnes pratiques
-img: "/assets/ITIL.jpeg"
+img: "/assets/ITIL.jpg"
 img_alt: "Livre ouvert symbolisant un corpus de bonnes pratiques"
 ---
 ## Définition d’ITIL
