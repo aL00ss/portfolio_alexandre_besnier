@@ -19,6 +19,7 @@ J’ai sélectionné trois flux spécialisés qui se complètent bien :
 
 Ces trois sources sont complémentaires : PortSwigger m’aide à comprendre les failles directement liées au code et aux pratiques de développement, Krebs on Security me montre les conséquences concrètes de ces erreurs, et The Hacker News me tient informé des menaces actuelles.
 
+Parmis les entités influentes sur ce sujet on retrouve sonarsource, crowdstrick et snyk:
 
 ![Des entités influentes dans ce sujet](/assets/cyberentreprise.png)
 

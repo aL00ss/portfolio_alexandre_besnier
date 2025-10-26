@@ -19,6 +19,7 @@ trois flux spécialisés dans l’actualité Android :
 
 Ces trois sources se complètent très bien : la première apporte les informations officielles, la deuxième des conseils pratiques de développeurs, et la troisième un aperçu régulier de l’actualité du monde Android. 
 
+Parmis les entités influentes sur ce sujet on retrouve jetbrains, droidcon et android developers de google:
 
 ![Des entités liées au développement sur android](/assets/androidentreprise.png)
 
