@@ -3,7 +3,7 @@ title: "Ma veille sur la cybersécurité pour les développeurs"
 publishDate: 2025-09-29
 img: /assets/cyber.png
 img_alt: Catégorie cybersécurité sur Feedly
-description: "Résumé de ma veille sur la sécurité applicative et les sources suivies"
+description: "Résumé de ma veille sur la sécurité liée à la programmation"
 tags:
   - Veille informatique
   - Compétence 6
@@ -18,3 +18,8 @@ J’ai sélectionné trois flux spécialisés qui se complètent bien :
 - **The Hacker News** : Ce flux me permet de suivre l’actualité cyber au quotidien : nouvelles failles découvertes, alertes de sécurité, correctifs urgents, nouveaux types d’attaques. Cela m’aide à rester informé des menaces qui ciblent les logiciels, et d’anticiper les risques en prenant de bons réflexes lors du développement.
 
 Ces trois sources sont complémentaires : PortSwigger m’aide à comprendre les failles directement liées au code et aux pratiques de développement, Krebs on Security me montre les conséquences concrètes de ces erreurs, et The Hacker News me tient informé des menaces actuelles.
+
+
+![Des entités influentes dans ce sujet](/assets/cyberentreprise.png)
+
+---
