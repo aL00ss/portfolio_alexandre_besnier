@@ -1,0 +1,45 @@
+               2.5.1. Pr?paration client Windows .............................................................................................. 19
+               2.5.2. Principales ?tapes de configuration................................................................................. 19
+               2.5.3. Validation du TP sur les permissions............................................................................... 27
+               2.5.4. Rappel : Portfolio ............................................................................................................... 27
+
+2  Lyc?e Savary de Maul?on - BTS SIO - SIO2 Bloc 1 - Pac?me MASSOL
+1. Preuves de mise en oeuvre des
+     comp?tences
+
+Portfolio
+
+Rep?rer la/les comp?tences du bloc 1 concern?es
+Cr?er un article dans votre portfolio avec des copies d'?cran et du texte
+
+Tableau de synth?se des comp?tences
+
+Compl?ter votre tableau de synth?se
+
+Lyc?e Savary de Maul?on - BTS SIO - SIO2 Bloc 1 - Pac?me MASSOL            3
+2. TP : Mettre en place et v?rifier les
+     niveaux d'habilitation associ?s ? un
+     service
+
+retrouvons notre machine, signe que celle-ci a bien ?t? int?gr?e dans l'Active Directory.
+
+2.5.3. Validation du TP sur les permissions
+
+Maintenant, vous vous connectez sur votre client Windows en tant que :
+
+         prof1 : il peut ?crire dans le partage ? seconde1 ? et il peut ?crire dans le partage
+         ? commun ?
+         eleve211 : il peut lire mais pas ?crire dans le partage ? seconde1 ? et il ne peut rien faire
+         dans le partage ? commun ?
+
+2.5.4. Rappel : Portfolio
+
+Travail not?
+
+Cr?er un article dans votre portfolio pour cette activit? (uniquement la gestion des droits, pas
+l'installation de Windows etc.). La notation tiendra compte de la qualit? du texte et des copies
+d'?cran.
+
+Lyc?e Savary de Maul?on - BTS SIO - SIO2 Bloc 1 - Pac?me MASSOL                                         27
+
+
