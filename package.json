@@ -20,6 +20,6 @@
     "@astrojs/preact": "^4.1.0"
   },
   "engines": {
-    "node": ">=20.3.0"
+    "node": "20.3.0"
   }
 }
