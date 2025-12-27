@@ -32,54 +32,48 @@ Guy Mauve (Technicien)
 Marie Tim (Technicien) 
 Sandy Kilot (Superviseur)
 
-2. **Création et Gestion des Tickets**
-Exemple de ticket (avec Paul)
+2. Affectation des Équipements et des Profils : Organisation des Responsabilités
 
-Titre : “Dégradation RAID 5 sur serveur DELL — alerte disque”
-Demandeur : Paul Hochon
-Type : Incident
-Actif lié : Serveur DELL (production)
-Description :
+Par la suite, j’ai attribué des profils utilisateurs ainsi que du matériel adapté à chaque personne :
 
-Symptôme : alerte RAID / disque en défaut
+Paul Hochon : Profil Self-Service associé à un poste client.
 
-Depuis : 09:10
+Guy Mauve et Marie Tim : Profils Technicien.
 
-Périmètre : service impacté (ex : fichiers partagés / applicatif)
+Sandy Kilot : Profil Superviseur.
 
-Preuves : capture, log, référence d’alerte
+Enjeu principal :
 
-Paul décrit le symptôme et joint une capture. Le support complète ensuite le reste (impact, priorité, tâches).
+L’attribution précise des rôles et des équipements permet à chaque utilisateur d’intervenir uniquement dans son périmètre, ce qui limite les erreurs, améliore l’efficacité et évite les surcharges de travail.
 
-Quelles infos doivent être dans un ticket
+3. Mise en Place et Suivi des Tickets : Une Démarche Indispensable
+Contenu d’un ticket
 
-Pour éviter les allers-retours inutiles, j’ai standardisé une checklist :
+Dans GLPI, un ticket doit comporter des informations structurées et détaillées afin d’assurer un traitement efficace :
 
-Titre clair (symptôme + système concerné)
+Titre : résumé clair du problème (ex. : « L’imprimante ne fonctionne plus »).
 
-Description (contexte, depuis quand, fréquence)
+Description : explication détaillée de l’incident (ex. : « L’imprimante HP123 ne répond plus depuis hier matin »).
 
-Catégorie (matériel / réseau / applicatif…)
+Impact et urgence : éléments permettant d’évaluer la priorité.
 
-Actif / CI (serveur, poste, imprimante)
+Assignation : technicien en charge du ticket.
 
-Impact (combien de personnes / quel service)
+Pièces jointes : captures d’écran, fichiers journaux, ou autres preuves.
 
-Urgence (délai acceptable avant blocage)
+Statut : ouvert, en cours de traitement, résolu, etc.
 
-Pièces jointes (captures, logs, messages d’erreur)
+Exemple concret
 
-Contact (si besoin d’un échange rapide)
+Paul Hochon (Self-Service) a ouvert un ticket afin de signaler un dysfonctionnement.
 
-Impact / urgence → priorité (rôle de Guy)
+Guy Mauve (Technicien) a pris en charge le ticket, ajusté les niveaux d’impact et d’urgence, puis utilisé la matrice de priorité pour le classer comme « Important ».
 
-Quand Guy Mauve prend le ticket, il qualifie :
+Pourquoi cette organisation est essentielle ?
 
-Impact : ex. “élevé” si le serveur supporte plusieurs utilisateurs
+Répartition des responsabilités : les incidents urgents et les problèmes nécessitant une analyse approfondie sont traités à des niveaux distincts.
 
-Urgence : ex. “haute” si le service est en risque d’arrêt
-
-GLPI calcule ensuite la priorité via la matrice. Ça rend le tri cohérent et défendable.
+Gestion optimale des priorités : l’évaluation de l’impact et de l’urgence permet une meilleure allocation des ressources et une résolution plus rapide.
 
 
 3. **Gestion des Problèmes**

@@ -13,8 +13,6 @@ tags:
   - WebAuthn
 ---
 
-Sujet (très récent) : création automatique de passkeys sur Android
-
 Depuis Chrome 142 sur Android, un site peut demander à Google Password Manager de créer une passkey automatiquement après qu’un utilisateur se soit connecté avec un mot de passe enregistré, grâce à une fonctionnalité WebAuthn appelée Conditional Create (mediation: "conditional").
 Chrome for Developers+1
 
@@ -26,12 +24,10 @@ Les passkeys réduisent fortement le risque de phishing (plus de mot de passe à
 Chrome for Developers+1
 
 Pour une équipe produit, ça se traduit souvent par : moins de resets de mot de passe, moins de comptes compromis, et une conversion vers le passwordless sans friction.
-Ce qu’il faut faire (très concret)
+Ce qu’il faut faire :
 
-    Côté web, déclencher la création via navigator.credentials.create(...) avec mediation: "conditional" après un login mot de passe réussi (si le navigateur le supporte).
-    Chrome for Developers
+Côté web, déclencher la création via navigator.credentials.create(...) avec mediation: "conditional" après un login mot de passe réussi (si le navigateur le supporte).
 
-    Côté Android natif, l’équivalent existe via Credential Manager avec une requête de création “conditionnelle” (isConditionalCreateRequest).
-    Android Developers
+Côté Android natif, l’équivalent existe via Credential Manager avec une requête de création “conditionnelle” (isConditionalCreateRequest).
 
-    Prévoir une détection de capacité (Conditional Create) pour garder un fallback propre (création manuelle) selon le navigateur/appareil.
+Prévoir une détection de capacité (Conditional Create) pour garder un fallback propre (création manuelle) selon le navigateur/appareil.
