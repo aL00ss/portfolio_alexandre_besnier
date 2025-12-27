@@ -1,7 +1,7 @@
 ---
 title: "Traitement d’un ticket et évolution du module de Planning Poker"
 publishDate: 2025-06-30
-img: /assets/session_vote.jpg
+img: /assets/session_vote.png
 img_alt: formulaire de création d'une session de poker planning dans Odoo
 description: "J'ai créé un module odoo répondnat aux besoins d'Innlog."
 
