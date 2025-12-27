@@ -2,7 +2,7 @@
 title: "La sécurité et les menaces sur Android : l’évolution des attaques mobile"
 publishDate: 2025-12-24
 img: "/assets/android_security_threats.jpg"
-img_alt: "Illustration d’une application Android attaquée par un malware"
+img_alt: "Android"
 description: |
  La sécurité et les menaces sur Android : l’évolution des attaques mobile
 tags:
