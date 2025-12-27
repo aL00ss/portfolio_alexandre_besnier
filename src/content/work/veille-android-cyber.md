@@ -4,6 +4,8 @@ publishDate: 2025-12-24
 tags: Android, Sécurité mobile, Cybermenaces, Malware
 img: "/assets/android_security_threats.jpg"
 img_alt: "Illustration d’une application Android attaquée par un malware"
+description: |
+ La sécurité et les menaces sur Android : l’évolution des attaques mobile
 tags:
   - Veille informatique
 ---
