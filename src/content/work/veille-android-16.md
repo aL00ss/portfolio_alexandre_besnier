@@ -1,7 +1,6 @@
 ---
 title: "Transformation du développement et impacts pour les développeurs"
 publishDate: 2025-12-25
-tags: Développement Android, Android 16, Google, Ecosystème
 img: "/assets/android16_dev.jpg"
 img_alt: "Smartphone Android avec affichage de l’interface Android 16"
 tags:
