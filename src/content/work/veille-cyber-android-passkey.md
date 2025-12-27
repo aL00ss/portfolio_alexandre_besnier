@@ -1,6 +1,6 @@
 ---
 title: "Chrome sur Android crée des passkeys automatiquement après un login mot de passe"
-publishDate: 2025-12-27
+publishDate: 2025-12-20
 img: "/assets/passkeys_auto_chrome_android.png"
 img_alt: "Écran WebAuthn/Passkeys illustrant une authentification sans mot de passe"
 description: |

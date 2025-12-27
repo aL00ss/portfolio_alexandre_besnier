@@ -1,7 +1,7 @@
 ---
 title: "Sauvegarde : 3-2-1-1-0, rétention et tests de restauration (définitions courtes)"
 publishDate: 2025-12-27
-img: "/assets/backup_basics.png"
+img: "/assets/backup_basics.jpg"
 img_alt: "Illustration de stratégie 3-2-1-1-0"
 description: |
   Définitions courtes des concepts essentiels : stratégie 3-2-1-1-0, politique de rétention et tests de restauration, avec une image par point (liens en fin d’article).

@@ -1,7 +1,7 @@
 ---
 title: "GLPI : Optimisation de la Gestion des Tickets — mise en place d’un support structuré"
-publishDate: 2025-12-27
-img: /assets/glpi_ticketing.png
+publishDate: 2025-12-20
+img: /assets/glpi_ticketing.jpg
 img_alt: Interface GLPI montrant la création, l’affectation et le suivi d’un ticket
 description: "J’ai organisé une gestion de tickets dans GLPI"
 
@@ -51,29 +51,14 @@ L’attribution précise des rôles et des équipements permet à chaque utilisa
 Dans GLPI, un ticket doit comporter des informations structurées et détaillées afin d’assurer un traitement efficace :
 
 Titre : résumé clair du problème (ex. : « L’imprimante ne fonctionne plus »).
-
 Description : explication détaillée de l’incident (ex. : « L’imprimante HP123 ne répond plus depuis hier matin »).
-
 Impact et urgence : éléments permettant d’évaluer la priorité.
-
 Assignation : technicien en charge du ticket.
-
-Pièces jointes : captures d’écran, fichiers journaux, ou autres preuves.
-
 Statut : ouvert, en cours de traitement, résolu, etc.
 
 Exemple concret
-
 Paul Hochon (Self-Service) a ouvert un ticket afin de signaler un dysfonctionnement.
-
 Guy Mauve (Technicien) a pris en charge le ticket, ajusté les niveaux d’impact et d’urgence, puis utilisé la matrice de priorité pour le classer comme « Important ».
-
-Pourquoi cette organisation est essentielle ?
-
-Répartition des responsabilités : les incidents urgents et les problèmes nécessitant une analyse approfondie sont traités à des niveaux distincts.
-
-Gestion optimale des priorités : l’évaluation de l’impact et de l’urgence permet une meilleure allocation des ressources et une résolution plus rapide.
-
 
 7. **Gestion des Problèmes**
 
