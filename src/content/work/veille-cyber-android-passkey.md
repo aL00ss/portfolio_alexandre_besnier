@@ -14,14 +14,14 @@ tags:
 ---
 
 Depuis Chrome 142 sur Android, un site peut demander à Google Password Manager de créer une passkey automatiquement après qu’un utilisateur se soit connecté avec un mot de passe enregistré, grâce à une fonctionnalité WebAuthn appelée Conditional Create (mediation: "conditional").
-Chrome for Developers+1
+
 
 L’utilisateur n’est pas interrompu : Chrome affiche ensuite une confirmation et un bouton pour gérer la passkey dans le gestionnaire.
 Chrome for Developers
 Pourquoi c’est important côté dev (sécurité + produit)
 
 Les passkeys réduisent fortement le risque de phishing (plus de mot de passe à voler), et cette nouveauté résout un frein majeur : l’adoption (les utilisateurs ne “prennent pas le temps” de créer une passkey).
-Chrome for Developers+1
+
 
 Pour une équipe produit, ça se traduit souvent par : moins de resets de mot de passe, moins de comptes compromis, et une conversion vers le passwordless sans friction.
 Ce qu’il faut faire :

@@ -97,9 +97,9 @@ GLPI offre la possibilité de demander au demandeur de valider la résolution, a
 7. **Différence entre un incident et un problème**
 
 Incident : événement qui dégrade ou interrompt un service (objectif : remise en service rapide).
-Ex : Paul n’a plus un service fiable à cause du RAID en défaut.
+
 
 Problème : cause (ou cause potentielle) d’un ou plusieurs incidents (objectif : éviter la répétition).
-Ex : Sandy identifie une série de pannes disque récurrentes et lance une action durable.
+
 
 ---
