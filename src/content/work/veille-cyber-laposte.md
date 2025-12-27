@@ -1,7 +1,6 @@
 ---
 title: "Ma veille sur le développement Android"
 publishDate: 2025-10-13
-tags: Cybersécurité, France, Attaque informatique, DDoS
 img: "/assets/laposte.jpg"
 img_alt: "Écran d’erreur site La Poste après cyberattaque"
 description: |
