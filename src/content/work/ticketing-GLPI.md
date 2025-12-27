@@ -60,7 +60,7 @@ Exemple concret
 Paul Hochon (Self-Service) a ouvert un ticket afin de signaler un dysfonctionnement.
 Guy Mauve (Technicien) a pris en charge le ticket, ajusté les niveaux d’impact et d’urgence, puis utilisé la matrice de priorité pour le classer comme « Important ».
 
-7. **Gestion des Problèmes**
+4. **Gestion des Problèmes**
 
 Quand plusieurs incidents se ressemblent je crée un Problème.
 
