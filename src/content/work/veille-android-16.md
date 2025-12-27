@@ -3,6 +3,8 @@ title: "Transformation du développement et impacts pour les développeurs"
 publishDate: 2025-12-25
 img: "/assets/android16_dev.jpg"
 img_alt: "Smartphone Android avec affichage de l’interface Android 16"
+description: |
+ Transformation du développement et impacts pour les développeurs
 tags:
   - Veille informatique
 ---
