@@ -1,6 +1,6 @@
 ---
 title: "Ma veille sur le développement Android"
-publishDate: 2025-10-13
+publishDate: 2025-12-26
 img: "/assets/laposte.jpg"
 img_alt: "Écran d’erreur site La Poste après cyberattaque"
 description: |
