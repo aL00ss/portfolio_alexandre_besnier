@@ -32,7 +32,7 @@ Guy Mauve (Technicien)
 Marie Tim (Technicien) 
 Sandy Kilot (Superviseur)
 
-2. Affectation des Équipements et des Profils : Organisation des Responsabilités
+2. **Affectation des Équipements et des Profils : Organisation des Responsabilités**
 
 Par la suite, j’ai attribué des profils utilisateurs ainsi que du matériel adapté à chaque personne :
 
@@ -46,8 +46,7 @@ Enjeu principal :
 
 L’attribution précise des rôles et des équipements permet à chaque utilisateur d’intervenir uniquement dans son périmètre, ce qui limite les erreurs, améliore l’efficacité et évite les surcharges de travail.
 
-3. Mise en Place et Suivi des Tickets : Une Démarche Indispensable
-Contenu d’un ticket
+3. **Mise en Place et Suivi des Tickets : Une Démarche Indispensable Contenu d’un ticket**
 
 Dans GLPI, un ticket doit comporter des informations structurées et détaillées afin d’assurer un traitement efficace :
 
@@ -76,7 +75,7 @@ Répartition des responsabilités : les incidents urgents et les problèmes néc
 Gestion optimale des priorités : l’évaluation de l’impact et de l’urgence permet une meilleure allocation des ressources et une résolution plus rapide.
 
 
-3. **Gestion des Problèmes**
+7. **Gestion des Problèmes**
 
 Quand plusieurs incidents se ressemblent je crée un Problème.
 
@@ -90,7 +89,7 @@ Il lie les incidents (celui de Paul, et d’autres) au Problème.
 
 L’objectif devient alors : identifier la cause racine (lot matériel, firmware, conditions, configuration) et définir une action durable (mise à jour, remplacement préventif, standard).
 
-4. **Rapport avec ITIL**
+5. **Rapport avec ITIL**
 
 J’ai aligné l’organisation sur une logique ITIL simple et compréhensible :
 
@@ -104,13 +103,13 @@ Traçabilité : historique des actions.
 
 GLPI fournit l’outil et le workflow ; ITIL fournit la méthode de classement et d’amélioration continue.
 
-5. **Feedback Utilisateur**
+6. **Feedback Utilisateur**
 
 Un élément central du processus de ticketing concerne le retour des utilisateurs :
 
 GLPI offre la possibilité de demander au demandeur de valider la résolution, afin de s’assurer que la solution apportée répond réellement à son besoin.
 
-6. **Différence entre un incident et un problème**
+7. **Différence entre un incident et un problème**
 
 Incident : événement qui dégrade ou interrompt un service (objectif : remise en service rapide).
 Ex : Paul n’a plus un service fiable à cause du RAID en défaut.
