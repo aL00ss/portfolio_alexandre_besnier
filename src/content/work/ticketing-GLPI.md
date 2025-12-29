@@ -27,24 +27,15 @@ Technicien : droits étendus pour la gestion des tickets.
 
 Superviseur : vue globale pour superviser et réassigner les tickets.
 
-Paul Hochon (Self-Service) 
-Guy Mauve (Technicien)
-Marie Tim (Technicien) 
-Sandy Kilot (Superviseur)
-
 2. **Affectation des Équipements et des Profils : Organisation des Responsabilités**
 
 Par la suite, j’ai attribué des profils utilisateurs ainsi que du matériel adapté à chaque personne :
 
-Paul Hochon : Profil Self-Service associé à un poste client.
+Paul Hochon : Profil Self-Service.
 
 Guy Mauve et Marie Tim : Profils Technicien.
 
-Sandy Kilot : Profil Superviseur.
-
-Enjeu principal :
-
-L’attribution précise des rôles et des équipements permet à chaque utilisateur d’intervenir uniquement dans son périmètre, ce qui limite les erreurs, améliore l’efficacité et évite les surcharges de travail.
+Sandy Kilot : Profil Superviseur. 
 
 3. **Mise en Place et Suivi des Tickets : Une Démarche Indispensable Contenu d’un ticket**
 
