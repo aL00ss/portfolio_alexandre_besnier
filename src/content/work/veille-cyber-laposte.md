@@ -1,8 +1,8 @@
 ---
-title: "Ma veille sur le développement Android"
+title: "Cyberattaque de laposte"
 publishDate: 2025-12-26
 img: "/assets/laposte.jpg"
-img_alt: "Écran d’erreur site La Poste après cyberattaque"
+img_alt: "laposte subit une cyberattaque"
 description: |
   cyberattaque de laposte
 tags:
