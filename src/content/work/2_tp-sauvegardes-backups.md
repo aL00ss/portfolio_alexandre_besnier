@@ -1,8 +1,8 @@
 ---
 title: "TP : Gerer les sauvegardes — mise en place, test de backup/restauration et plan de sauvegarde"
 publishDate: 2026-01-05
-img: /assets/templateur.jpg
-img_alt: Image de couverture par defaut
+img: /assets/UrBackup-Logo.jpg
+img_alt: Logo UrBackup
 description: "J’ai mis en place une solution de sauvegarde, teste la sauvegarde/restauration et defini un plan de backup."
 
 tags:
