@@ -1,7 +1,7 @@
 ---
 title: "Évolutions : Intégration des retours client — améliorations, tests fonctionnels et correctifs applicatifs"
 publishDate: 2026-02-05
-img: /assets/templateur.jpg
+img: /assets/streamlit-logo.png
 img_alt: Image de couverture par defaut
 description: "J’ai intégré des retours client, réalisé des tests fonctionnels et apporté des correctifs sur l’application."
 

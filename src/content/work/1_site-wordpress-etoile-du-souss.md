@@ -1,7 +1,7 @@
 ---
 title: "TP : Site WordPress pour l’association « l’étoile du souss » — réalisation en binôme"
 publishDate: 2025-05-31
-img: /assets/templateur.jpg
+img: /assets/WordPress-Logo.png
 img_alt: Image de couverture par defaut
 description: "En groupe de 2, j’ai réalisé un site WordPress pour une association."
 
@@ -11,20 +11,37 @@ tags:
 ---
 TP : Site WordPress association « l’étoile du souss »
 
-1. **Contexte**
+## Contexte du projet
 
-Projet réalisé en cours de formation, en binôme, pour créer un site WordPress.
+Dans le cadre de ma formation, j’ai participe a la realisation d’un projet concret visant a developper la presence en ligne de l’association **L’Etoile du Souss**.
 
-2. **Objectifs**
+L’objectif etait de concevoir un site WordPress professionnel permettant de :
 
-- Mettre en ligne une présence web pour l’association.
-- Proposer une structure claire (accueil, informations, contact).
+- presenter l’association et ses demarches,
+- attirer de nouveaux visiteurs grace a la publication d’articles,
+- faciliter la prise de contact avec les adherents et partenaires.
 
-3. **Travail réalisé**
+## Mise en place de l’environnement technique
 
-- Création/paramétrage du site (pages, menus, contenu).
-- Organisation du travail en binôme (répartition, synchronisation).
+### Hebergement
 
+Afin de repondre au cahier des charges, j’ai mis en place l’environnement necessaire au fonctionnement du site :
+
+- deploiement d’une machine virtuelle sous **Debian 12**,
+- installation de la derniere version francaise de **WordPress**,
+- configuration d’un nom de domaine
+
+### Choix du theme WordPress
+
+Le choix du theme etait une etape importante pour garantir un site moderne, accessible et evolutif. J’ai selectionne un theme adapte au secteur associatif, responsive et maintenu regulierement.
+
+**Criteres retenus**
+
+- compatibilite avec la derniere version de WordPress,
+- affichage responsive (ordinateur, tablette, mobile),
+- optimisation SEO integree,
+- respect des regles d’accessibilite,
+- compatibilite avec WooCommerce pour une eventuelle vente en ligne.
 
 ---
 

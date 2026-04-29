@@ -1,7 +1,7 @@
 ---
 title: "Mise à disposition : Documentation, scripts de setup et sauvegarde — faciliter le déploiement chez le client"
 publishDate: 2026-02-05
-img: /assets/templateur.jpg
+img: /assets/streamlit-logo.png
 img_alt: Image de couverture par defaut
 description: "J’ai produit la documentation et des scripts de setup/sauvegarde pour faciliter le déploiement et l’exploitation."
 

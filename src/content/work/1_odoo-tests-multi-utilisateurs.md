@@ -1,7 +1,7 @@
 ---
 title: "Odoo : Tests multi-utilisateurs — validation des alertes et de l’accès à l’interface individuelle"
 publishDate: 2025-06-30
-img: /assets/templateur.jpg
+img: /assets/odoo_logo.png
 img_alt: Image de couverture par defaut
 description: "J’ai réalisé des tests multi-utilisateurs pour valider la réception des alertes et l’accès à l’interface de vote."
 
@@ -19,7 +19,7 @@ Valider le bon fonctionnement en conditions réelles (plusieurs comptes connect�
 
 - Réception des notifications.
 - Accès correct à l’interface individuelle.
-- Cas limites (à détailler).
+
 
 3. **Résultats**
 

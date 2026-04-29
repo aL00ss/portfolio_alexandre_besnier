@@ -1,7 +1,7 @@
 ---
 title: "Autoformation : Cisco Networking Academy — certifications et apprentissage en ligne"
 publishDate: 2025-12-31
-img: /assets/templateur.jpg
+img: /assets/cisco-net-acad.jpg
 img_alt: Image de couverture par defaut
 description: "J’ai suivi une autoformation via Cisco Networking Academy pour renforcer mes compétences réseau."
 
@@ -23,6 +23,11 @@ Développer mes compétences par l’autoformation (cours, modules, exercices) e
 
 - Consolidation des bases réseau.
 - Mise en pratique via exercices et évaluations.
+
+3. **Modules Validés**
+
+- Python
+- JavaScript
 
 ---
 

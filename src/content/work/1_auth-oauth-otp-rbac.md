@@ -1,7 +1,7 @@
 ---
 title: "Sécurité : Authentification (Google OAuth, identifiant/mot de passe, OTP) et gestion des rôles RBAC"
 publishDate: 2026-02-05
-img: /assets/templateur.jpg
+img: /assets/google-auth-logo.jpg
 img_alt: Image de couverture par defaut
 description: "J’ai développé un système d’authentification et d’autorisations pour l’application (OAuth, OTP, RBAC)."
 

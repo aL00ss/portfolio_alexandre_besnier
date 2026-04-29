@@ -1,7 +1,7 @@
 ---
 title: "Audit SEO : Analyse Matomo, rapport Python avec graphiques et améliorations via Drupal"
 publishDate: 2026-02-05
-img: /assets/templateur.jpg
+img: /assets/matomo-logo.png
 img_alt: Image de couverture par defaut
 description: "J’ai réalisé un audit SEO à partir de données Matomo, produit un rapport Python et amélioré des pages/modules sous Drupal."
 

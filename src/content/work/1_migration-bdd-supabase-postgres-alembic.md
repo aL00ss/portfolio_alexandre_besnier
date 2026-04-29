@@ -1,7 +1,7 @@
 ---
 title: "Migration : Base de données locale vers PostgreSQL (Supabase) — SQLAlchemy et migrations Alembic"
 publishDate: 2026-02-05
-img: /assets/templateur.jpg
+img: /assets/streamlit-logo.png
 img_alt: Image de couverture par defaut
 description: "J’ai migré la base de données vers PostgreSQL via Supabase avec SQLAlchemy et Alembic."
 

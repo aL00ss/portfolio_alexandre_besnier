@@ -1,7 +1,7 @@
 ---
 title: "TP : Site WordPress « Hotel Rabbanov » — création en équipe"
 publishDate: 2025-05-16
-img: /assets/templateur.jpg
+img: /assets/WordPress-Logo.png
 img_alt: Image de couverture par defaut
 description: "En équipe de 5, j’ai participé à la création d’un site WordPress pour un hôtel."
 
@@ -11,20 +11,42 @@ tags:
 ---
 TP : Site WordPress « Hotel Rabbanov »
 
-1. **Contexte**
+## Contexte du projet
 
-Projet réalisé en cours de formation, en équipe de 5, avec l’objectif de créer un site WordPress vitrine.
+Dans le cadre de ma formation, j’ai participe a un projet de groupe consistant a concevoir le site web d’une entreprise fictive nommee **Hotel Rabanov**.
 
-2. **Objectifs**
+Ce travail avait pour objectif de simuler un projet professionnel reel en appliquant une organisation en mode projet, avec repartition des taches, suivi de l’avancement et collaboration entre les membres de l’equipe.
 
-- Structurer le contenu (pages, navigation, identité visuelle).
-- Publier un site consultable et cohérent avec le besoin.
+## Organisation du travail en mode projet
 
-3. **Travail réalisé**
+Le projet a ete realise en groupe de cinq personnes. Afin d’assurer une bonne coordination, nous avons mis en place une methode de travail collaborative permettant de structurer les differentes etapes du developpement.
 
-- Participation à la mise en place du site (thème, pages, contenus).
-- Coordination en équipe (répartition des tâches, suivi).
+Nous avons notamment utilise :
 
+- **GitHub Projects** pour organiser les taches, suivre leur avancement et repartir le travail,
+- **Trello** pour planifier les actions a mener et visualiser l’etat du projet,
+- **Git / GitHub** pour centraliser le code source et faciliter le travail en equipe.
+
+## Realisation du site web
+
+Pendant ce TP, nous avons developpe un site vitrine professionnel destine a presenter l’activite de l’Hotel Rabanov.
+
+Le site avait pour objectifs de :
+
+- presenter l’etablissement et ses services,
+- mettre en valeur les chambres et prestations proposees,
+- permettre la prise de contact ou la reservation,
+- offrir une navigation claire et moderne aux visiteurs.
+
+## Competences mobilisees
+
+Ce projet m’a permis de developper des competences en :
+
+- travail en equipe,
+- gestion de projet collaboratif,
+- utilisation d’outils de suivi de projet,
+- developpement web,
+- organisation du travail et respect des delais.
 
 ---
 
