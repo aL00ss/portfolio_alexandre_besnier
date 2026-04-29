@@ -24,9 +24,5 @@ Développer mes compétences par l’autoformation (cours, modules, exercices) e
 - Consolidation des bases réseau.
 - Mise en pratique via exercices et évaluations.
 
-4. **Productions / preuves**
-
-- Attestations, badges, captures de progression (à ajouter).
-
 ---
 

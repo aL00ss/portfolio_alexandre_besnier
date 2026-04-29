@@ -25,10 +25,6 @@ Travail réalisé en milieu professionnel : étude d’un ticket d’évolution 
 - Répartition des tâches.
 - Suivi et jalons via Odoo (à détailler).
 
-4. **Productions / preuves**
-
-- Ticket / capture (à ajouter).
-- Tableau des tâches / planning (à ajouter).
 
 ---
 

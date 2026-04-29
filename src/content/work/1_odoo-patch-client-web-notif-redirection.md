@@ -20,10 +20,6 @@ Intégrer l’écoute d’un événement temps réel dans le client web, notifie
 - Écoute de l’événement et déclenchement des actions.
 - Gestion des canaux personnels et redirection (à détailler).
 
-3. **Productions / preuves**
-
-- Extraits de code / MR/commit (à ajouter).
-- Captures de fonctionnement (à ajouter).
 
 ---
 

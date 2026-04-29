@@ -20,10 +20,4 @@ Monter en compétence sur le framework Odoo, JavaScript et OWL afin de préparer
 - Réalisation de tests/POC (à détailler).
 - Prise de notes et capitalisation (à détailler).
 
-3. **Productions / preuves**
-
-- Notes de synthèse / supports (à ajouter).
-- Exemples de code ou captures (à ajouter).
-
----
 

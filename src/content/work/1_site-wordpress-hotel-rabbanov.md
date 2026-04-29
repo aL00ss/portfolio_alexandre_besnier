@@ -25,10 +25,6 @@ Projet réalisé en cours de formation, en équipe de 5, avec l’objectif de cr
 - Participation à la mise en place du site (thème, pages, contenus).
 - Coordination en équipe (répartition des tâches, suivi).
 
-4. **Productions / preuves**
-
-- Captures des pages principales (à ajouter).
-- Documentation / répartition des tâches (à ajouter).
 
 ---
 
