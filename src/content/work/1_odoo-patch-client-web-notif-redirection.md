@@ -18,7 +18,7 @@ Intégrer l’écoute d’un événement temps réel dans le client web, notifie
 2. **Travail réalisé**
 
 - Écoute de l’événement et déclenchement des actions.
-- Gestion des canaux personnels et redirection (à détailler).
+- Gestion des canaux personnels et redirection.
 
 
 ---

@@ -17,7 +17,7 @@ Diffuser un événement “session lancée” aux utilisateurs concernés en tem
 2. **Conception**
 
 - Choix de l’architecture de notification.
-- Définition des canaux / messages (à détailler).
+- Définition des canaux / messages .
 
 
 

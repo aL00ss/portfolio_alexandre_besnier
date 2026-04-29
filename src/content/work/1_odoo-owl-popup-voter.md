@@ -17,7 +17,7 @@ Afficher une notification/popup “Voter” lorsque l’événement “session l
 2. **Implémentation**
 
 - Création du composant OWL.
-- Gestion de l’affichage et des interactions (à détailler).
+- Gestion de l’affichage et des interactions .
 
 
 

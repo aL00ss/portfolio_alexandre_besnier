@@ -23,7 +23,7 @@ Valider le bon fonctionnement en conditions réelles (plusieurs comptes connect�
 
 3. **Résultats**
 
-- Résultats de tests et anomalies (à ajouter).
+- Résultats de tests et anomalies.
 
 ---
 
