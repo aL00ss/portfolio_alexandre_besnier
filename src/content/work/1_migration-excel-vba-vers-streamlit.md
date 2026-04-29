@@ -1,7 +1,7 @@
 ---
 title: "Migration : Excel/VBA vers une application web Python/Streamlit (ERP) — travail en équipe avec Git"
 publishDate: 2026-02-05
-img: /assets/templateur.jpg
+img: /assets/streamlit-logo.png
 img_alt: Image de couverture par defaut
 description: "En équipe, j’ai participé à la migration d’un outil Excel/VBA vers une application web Python/Streamlit de type ERP."
 

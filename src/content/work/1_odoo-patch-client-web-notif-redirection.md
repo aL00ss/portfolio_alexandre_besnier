@@ -1,7 +1,7 @@
 ---
 title: "Odoo : Patch du client web — écoute d’événements, notification et redirection vers la vue de vote"
 publishDate: 2025-06-30
-img: /assets/templateur.jpg
+img: /assets/odoo_logo.png
 img_alt: Image de couverture par defaut
 description: "J’ai patché le client web Odoo pour écouter l’événement, notifier les utilisateurs et gérer la redirection vers la vue de vote."
 

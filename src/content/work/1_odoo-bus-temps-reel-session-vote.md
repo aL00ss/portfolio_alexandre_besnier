@@ -1,7 +1,7 @@
 ---
 title: "Odoo : Conception d’une solution temps réel via le bus pour lancer une session de vote"
 publishDate: 2025-06-30
-img: /assets/templateur.jpg
+img: /assets/odoo_logo.png
 img_alt: Image de couverture par defaut
 description: "J’ai conçu une solution temps réel basée sur le bus d’Odoo pour notifier les utilisateurs du lancement d’une session de vote."
 

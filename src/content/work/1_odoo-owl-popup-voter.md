@@ -1,7 +1,7 @@
 ---
 title: "Odoo : Développement d’un composant JavaScript/OWL — popup « Voter » à la réception de « session lancée »"
 publishDate: 2025-06-30
-img: /assets/templateur.jpg
+img: /assets/odoo_logo.png
 img_alt: Image de couverture par defaut
 description: "J’ai développé un composant OWL affichant une popup de vote lors de la réception d’un message temps réel."
 
