@@ -1,7 +1,7 @@
 ---
 title: "TP : Active Directory — domaine, utilisateurs, groupes, habilitations et partage"
 publishDate: 2025-12-22
-img: /assets/Active-Directory-Logo.jpg
+img: /assets/Active-Directory-Logo.png
 img_alt: Image de couverture par defaut
 description: "J’ai mis en place un domaine Active Directory et verifie les niveaux d’habilitation associes a un service (groupes, droits, partage)."
 
