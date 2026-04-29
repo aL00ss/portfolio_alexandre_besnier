@@ -7,7 +7,6 @@ description: "J’ai mis en place une solution de sauvegarde, teste la sauvegard
 
 tags:
   - "Compétence - Gérer le patrimoine informatique"
-  - "Compétence - Mettre à disposition des utilisateurs un service informatique"
 ---
 TP : gestion des sauvegardes (backups)
 
@@ -41,39 +40,3 @@ Mettre en place un dispositif de sauvegarde (serveur + client), tester la sauveg
 - Une sauvegarde n’a de valeur que si la restauration est testee.
 - Le plan de sauvegarde doit definir quoi sauvegarder, quand, combien de temps conserver et comment verifier.
 
-4. **Captures (extraits du TP)**
-
-<figure>
-  <img src="/assets/tp%20backup/Capture%20d'%C3%A9cran%202024-12-08%20130202.jpg" alt="Installation du serveur UrBackup." loading="lazy" decoding="async" />
-  <figcaption>Installation du serveur UrBackup.</figcaption>
-</figure>
-
-<figure>
-  <img src="/assets/tp%20backup/Capture%20d'%C3%A9cran%202024-12-08%20130245.jpg" alt="Parametres serveur UrBackup (repertoire de sauvegarde, options generales)." loading="lazy" decoding="async" />
-  <figcaption>Parametres serveur (repertoire de sauvegarde et options).</figcaption>
-</figure>
-
-<figure>
-  <img src="/assets/tp%20backup/Capture%20d'%C3%A9cran%202024-12-08%20130316.jpg" alt="Liste des clients et etat des sauvegardes." loading="lazy" decoding="async" />
-  <figcaption>Vue des clients et etat des sauvegardes.</figcaption>
-</figure>
-
-<figure>
-  <img src="/assets/tp%20backup/Capture%20d'%C3%A9cran%202024-12-08%20130930.jpg" alt="Fichier de test cree sur le poste client (testBackup.txt)." loading="lazy" decoding="async" />
-  <figcaption>Fichier de test cote client pour valider la sauvegarde.</figcaption>
-</figure>
-
-<figure>
-  <img src="/assets/tp%20backup/Capture%20d'%C3%A9cran%202024-12-08%20131042.jpg" alt="Acces aux sauvegardes du client et possibilites de restauration." loading="lazy" decoding="async" />
-  <figcaption>Acces aux sauvegardes et options de restauration.</figcaption>
-</figure>
-
-<figure>
-  <img src="/assets/tp%20backup/Capture%20d'%C3%A9cran%202024-12-08%20131115.jpg" alt="Activite de sauvegarde terminee (100%)." loading="lazy" decoding="async" />
-  <figcaption>Suivi d’activite : sauvegarde complete.</figcaption>
-</figure>
-
-<figure>
-  <img src="/assets/tp%20backup/Capture%20d'%C3%A9cran%202024-12-08%20131312.jpg" alt="Planification : intervalle sauvegarde incrementele et complete." loading="lazy" decoding="async" />
-  <figcaption>Exemple de planification (incrementele / complete).</figcaption>
-</figure>
