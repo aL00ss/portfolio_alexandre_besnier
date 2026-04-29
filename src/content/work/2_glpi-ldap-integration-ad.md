@@ -29,3 +29,4 @@ Integrer GLPI avec Active Directory afin de centraliser la gestion des comptes (
 - L’integration LDAP permet d’aligner GLPI sur le referentiel d’identites (AD) : moins de doubles saisies et des droits plus coherents.
 - Les tests/validations (connexion, import, affectation) sont indispensables avant mise en production.
 
+---

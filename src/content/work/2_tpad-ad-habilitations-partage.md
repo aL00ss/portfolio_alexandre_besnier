@@ -1,7 +1,7 @@
 ---
 title: "TP : Active Directory — domaine, utilisateurs, groupes, habilitations et partage"
 publishDate: 2025-12-22
-img: /assets/templateur.jpg
+img: /assets/Active-Directory-Logo.jpg
 img_alt: Image de couverture par defaut
 description: "J’ai mis en place un domaine Active Directory et verifie les niveaux d’habilitation associes a un service (groupes, droits, partage)."
 
@@ -54,8 +54,3 @@ La gestion des habilitations dans Active Directory (AD) permet de controler qui 
 - La structuration (UO/groupes) simplifie l’administration et la mise en conformite des droits.
 - Les tests de droits sont essentiels pour verifier que l’habilitation correspond au besoin (et au principe du moindre privilege).
 
-7. **Productions / preuves**
-
-Synthese et captures issues du TP (structure AD, groupes et permissions).
-
----

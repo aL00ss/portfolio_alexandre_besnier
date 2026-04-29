@@ -28,3 +28,4 @@ Comprendre ce qu’est un projet, ses etapes, et savoir choisir une methode adap
 - Scrum apporte un cadre clair pour itérer et livrer progressivement.
 
 
+---

@@ -27,3 +27,4 @@ Comprendre le role du DNS, son organisation (racine, TLD, domaines), la resoluti
 - Le DNS est un service critique : une mauvaise configuration ou un mauvais choix de nom de domaine impacte directement l’accessibilite des services en ligne.
 - La hierarchie DNS explique comment un nom est resolu, et aide a diagnostiquer des problemes de resolution.
 
+---

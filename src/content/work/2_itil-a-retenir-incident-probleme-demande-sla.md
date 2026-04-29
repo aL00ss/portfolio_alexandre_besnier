@@ -1,8 +1,8 @@
 ---
 title: "Cours / TP : ITIL — incident, probleme, demande, SLA/GTI/GTR (a retenir)"
 publishDate: 2025-12-01
-img: /assets/templateur.jpg
-img_alt: Image de couverture par defaut
+img: /assets/ITIL-Logo-2823884261.jpg
+img_alt: Logo ITIL
 description: "J’ai revise les notions ITIL : objectifs, SLA, GTI/GTR et qualification incident/probleme/demande."
 
 tags:
@@ -36,7 +36,3 @@ L’Information Technology Infrastructure Library (ITIL) est un cadre de bonnes 
 - Bien qualifier un ticket (incident/demande/probleme) conditionne la bonne priorisation et le bon traitement.
 - Les engagements (SLA/GTI/GTR) structurent la relation de service et permettent de mesurer la qualite.
 - ITIL aide a reduire les incidents, a diminuer le temps de resolution, et a ameliorer la disponibilite des services.
-
-5. **Source (document de TP)**
-
-Ce contenu s’appuie sur le document de synthese present dans `public/assets/tp itil/ITIL  Optimisation des services inf.txt`.
