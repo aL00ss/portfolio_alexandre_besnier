@@ -19,10 +19,5 @@ Diffuser un événement “session lancée” aux utilisateurs concernés en tem
 - Choix de l’architecture de notification.
 - Définition des canaux / messages (à détailler).
 
-3. **Productions / preuves**
 
-- Schéma d’architecture (à ajouter).
-- Extraits de configuration/code (à ajouter).
-
----
 

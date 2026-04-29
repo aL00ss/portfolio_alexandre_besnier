@@ -25,10 +25,6 @@ Projet réalisé en cours de formation, en binôme, pour créer un site WordPres
 - Création/paramétrage du site (pages, menus, contenu).
 - Organisation du travail en binôme (répartition, synchronisation).
 
-4. **Productions / preuves**
-
-- Captures et arborescence du site (à ajouter).
-- Export / documentation (à ajouter).
 
 ---
 
