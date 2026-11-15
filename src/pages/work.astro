@@ -83,10 +83,11 @@ const allTags = Array.from(
             const pill = document.createElement('span');
             pill.className = 'tag-pill';
             pill.dataset.tag = tag;
-            pill.innerHTML = `
-              ${tag}
-              <button type="button" class="remove-pill">×</button>
-            `;
+            const removeBtn = document.createElement('button');
+            removeBtn.type = 'button';
+            removeBtn.className = 'remove-pill';
+            removeBtn.textContent = '×';
+            pill.append(document.createTextNode(tag + ' '), removeBtn);
             selected.append(pill);
             updateFilter();
           }
